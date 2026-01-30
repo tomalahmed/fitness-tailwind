@@ -4,8 +4,306 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Tailwind</title>
+<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Outfit', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="bg-white">
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-gray-700 via-gray-600 to-gray-500 min-h-screen overflow-hidden">
+        <!-- Navigation -->
+        <nav class="container mx-auto px-6 py-6 flex items-center justify-between">
+            <h1 class="text-3xl font-bold italic text-purple-500">Fitness</h1>
+            <ul class="flex items-center gap-6">
+                <li><a href="#"
+                        class="bg-purple-500 text-white px-6 py-2 rounded-full hover:bg-purple-600 transition">Home</a></li>
+                <li><a href="#" class="text-white hover:text-purple-400 transition">Service</a></li>
+                <li><a href="#" class="text-white hover:text-purple-400 transition">Contact</a></li>
+                <li><a href="#" class="text-white hover:text-purple-400 transition">About</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="container mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Content -->
+            <div class="space-y-6">
+                <h2 class="text-6xl lg:text-7xl font-black text-white leading-tight">
+                    Get body in shape & stay healthy
+                </h2>
+                <p class="text-gray-300 text-lg max-w-xl">
+                    A huge selection of health and fitness content, healthy recipes and transformation stories to help
+                    you get fit and stay fit!
+                </p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="bg-purple-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-purple-600 transition shadow-lg">
+                        Join Club Now!
+                    </a>
+                    <a href="#" class="text-white px-8 py-3 rounded-full font-semibold hover:text-purple-400 transition">
+                        Download App
+                    </a>
+                </div>
+            </div>
+            <!-- Right Content - Image with Stats -->
+            <div class="relative">
+                <img src="./Assests/hero-trainer.jpg" alt="Fitness Trainer"
+                    class="w-full h-auto object-cover rounded-lg shadow-2xl">
+
+                <!-- Stats Badge 1 -->
+                <div
+                    class="absolute top-20 right-0 bg-gray-800 bg-opacity-90 backdrop-blur-sm rounded-xl px-6 py-4 shadow-xl">
+                    <h3 class="text-4xl font-bold text-white">500+</h3>
+                    <p class="text-gray-300 text-sm">Free Workout Videos</p>
+                </div>
+
+                <!-- Stats Badge 2 -->
+                <div
+                    class="absolute bottom-32 left-0 bg-gray-800 bg-opacity-90 backdrop-blur-sm rounded-xl px-6 py-4 shadow-xl flex items-center gap-3">
+                    <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-white">350+</h3>
+                        <p class="text-gray-300 text-sm">Video tutorial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Circular Gallery Section -->
+    <section class="py-20 bg-white">
+        <h1 class="text-center text-4xl font-extrabold mb-5">Change Your Habits</h1>
+        <p class="text-center text-gray-600 mb-20">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                <div class="flex flex-col items-center">
+                    <div class="w-48 h-48 rounded-full overflow-hidden shadow-xl">
+                        <img src="./Assests/workout-1.jpg" alt="Workout 1" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-center">Movement</h3>
+                    <p class="text-gray-600 text-center">We believe fitness should be accessible to everyone</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-48 h-48 rounded-full overflow-hidden shadow-xl">
+                        <img src="./Assests/workout-2.jpg" alt="Workout 2" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-center">Time</h3>
+                    <p class="text-gray-600 text-center">We believe fitness should be accessible to everyone</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-48 h-48 rounded-full overflow-hidden shadow-xl">
+                        <img src="./Assests/workout-3.jpg" alt="Workout 3" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-center">Practice</h3>
+                    <p class="text-gray-600 text-center">We believe fitness should be accessible to everyone</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-48 h-48 rounded-full overflow-hidden shadow-xl">
+                        <img src="./Assests/workout-4.jpg" alt="Workout 4" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-center">Weight-loss</h3>
+                    <p class="text-gray-600 text-center">We believe fitness should be accessible to everyone</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section - Run an Extra Mile -->
+    <section class="py-20 bg-gradient-to-br from-gray-800 via-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                <!-- Left Content -->
+                <div class="space-y-6">
+                    <h2 class="text-5xl lg:text-6xl font-black text-white leading-tight">
+                        Run an Extra Mile Easily
+                    </h2>
+                    <p class="text-gray-300 text-lg max-w-xl">
+                        We believe fitness should be accessible to everyone, everywhere, regardless of income or access
+                        to a gym. With hundreds of professional workouts.
+                    </p>
+                    <a href="#"
+                        class="inline-block bg-purple-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-purple-600 transition shadow-lg">
+                        Join Now
+                    </a>
+                </div>
+
+                <!-- Right Content - Image -->
+                <div class="relative">
+                    <img src="./Assests/runner.jpg" alt="Runner" class="w-full h-auto object-cover rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workout Grid Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h1 class="text-center text-4xl font-extrabold mb-5">Training & Exercise</h1>
+            <p class="text-center text-gray-600 mb-20">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+                <!-- Grid Item 1 -->
+                <div class="relative h-48 rounded-xl overflow-hidden group cursor-pointer">
+                    <img src="./Assests/grid1.jpg"
+                        alt="Workout" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-cyan-500 bg-opacity-60 group-hover:bg-opacity-70 transition"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <p class="text-white font-semibold">Gym</p>
+                    </div>
+                </div>
+
+                <!-- Grid Item 2 -->
+                <div class="relative h-48 rounded-xl overflow-hidden group cursor-pointer">
+                    <img src="./Assests/grid2.jpg"
+                        alt="Workout" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-red-500 bg-opacity-60 group-hover:bg-opacity-70 transition"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <p class="text-white font-semibold">Belly</p>
+                    </div>
+                </div>
+                <!-- Grid Item 3 -->
+                <div class="relative h-48 rounded-xl overflow-hidden group cursor-pointer">
+                    <img src="./Assests/grid3.jpg"
+                        alt="Workout" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gray-600 bg-opacity-60 group-hover:bg-opacity-70 transition"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <p class="text-white font-semibold">Fat lose</p>
+                    </div>
+                </div>
+
+                <!-- Grid Item 4 -->
+                <div class="relative h-48 rounded-xl overflow-hidden group cursor-pointer">
+                    <img src="./Assests/grid4.jpg"
+                        alt="Workout" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gray-800 bg-opacity-60 group-hover:bg-opacity-70 transition"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <p class="text-white font-semibold">Leg Press</p>
+                    </div>
+                </div>
+
+                <!-- Grid Item 5 -->
+                <div class="relative h-48 rounded-xl overflow-hidden group cursor-pointer">
+                    <img src="./Assests/grid5.jpg"
+                        alt="Workout" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-green-500 bg-opacity-60 group-hover:bg-opacity-70 transition"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <p class="text-white font-semibold">Leg Press: Works the quadriceps and glutes</p>
+                    </div>
+                </div>
+
+                <!-- Grid Item 6 -->
+                <div class="relative h-48 rounded-xl overflow-hidden group cursor-pointer">
+                    <img src="./Assests/grid6.jpg"
+                        alt="Workout" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-blue-500 bg-opacity-60 group-hover:bg-opacity-70 transition"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <p class="text-white font-semibold">Pulls</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <!-- Trainer 1 -->
+                <div class="relative h-64 rounded-xl overflow-hidden group cursor-pointer shadow-lg">
+                    <img src="./Assests/t1.jpg"
+                        alt="Jerome Bell" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80">
+                    </div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-white font-bold text-xl">Jerome Bell</h3>
+                        <p class="text-gray-300 text-sm">Trainer</p>
+                    </div>
+                </div>
+
+                <!-- Trainer 2 -->
+                <div class="relative h-64 rounded-xl overflow-hidden group cursor-pointer shadow-lg">
+                    <img src="./Assests/t2.jpg"
+                        alt="Cameron Williamson" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80">
+                    </div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-white font-bold text-xl">Cameron Williamson</h3>
+                        <p class="text-gray-300 text-sm">Trainer</p>
+                    </div>
+                </div>
+
+                <!-- Trainer 3 -->
+                <div class="relative h-64 rounded-xl overflow-hidden group cursor-pointer shadow-lg">
+                    <img src="./Assests/t3.jpg"
+                        alt="Darrell Steward" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80">
+                    </div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-white font-bold text-xl">Darrell Steward</h3>
+                        <p class="text-gray-300 text-sm">Trainer</p>
+                    </div>
+                </div>
+
+                <!-- Trainer 4 -->
+                <div class="relative h-64 rounded-xl overflow-hidden group cursor-pointer shadow-lg">
+                    <img src="./Assests/t4.jpg"
+                        alt="Dianne Russell" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80">
+                    </div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-white font-bold text-xl">Dianne Russell</h3>
+                        <p class="text-gray-300 text-sm">Trainer</p>
+                    </div>
+                </div>
+
+                <!-- Trainer 5 -->
+                <div class="relative h-64 rounded-xl overflow-hidden group cursor-pointer shadow-lg">
+                    <img src="./Assests/t5.jpg"
+                        alt="Cody Fisher" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80">
+                    </div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-white font-bold text-xl">Cody Fisher</h3>
+                        <p class="text-gray-300 text-sm">Trainer</p>
+                    </div>
+                </div>
+
+                <!-- Trainer 6 -->
+                <div class="relative h-64 rounded-xl overflow-hidden group cursor-pointer shadow-lg">
+                    <img src="./Assests/t6.jpg"
+                        alt="Theresa Webb" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80">
+                    </div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-white font-bold text-xl">Theresa Webb</h3>
+                        <p class="text-gray-300 text-sm">Trainer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white border-t border-gray-200">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold italic text-purple-500 mb-4">Fitness</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Get body in shape & stay healthy with our comprehensive fitness programs
+            </p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
